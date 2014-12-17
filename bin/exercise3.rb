@@ -1,7 +1,8 @@
 require 'yaml'
 require 'pp'
 
-parks = YAML.load(File.read('data/amusement_parks.yml'))
+raw_data = File.read('data/amusement_parks.yml')
+parks = YAML.load(raw_data)
 
 
 result = {}
